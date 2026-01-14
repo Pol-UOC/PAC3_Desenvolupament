@@ -219,8 +219,34 @@
           </a>
           <span>(Consultat: Desembre de 2025)</span>
         </li>
+        <li>
+          <a href="https://suno.com/" target="_blank">
+            <strong>Suno</strong> <em>Suno AI</em>
+          </a>
+          <span>(Consultat: Gener de 2025)</span>
+        </li>
       </ul>
     </footer>
   </div>
+  <audio id="bg-music" loop>
+        <source src="assets/background-lofi.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="floating-controls">
+        <button id="scroll-top-btn" class="control-btn hidden" aria-label="Torna a dalt">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+        </button>
+        
+        <button id="music-btn" class="control-btn" aria-label="Activar/Desactivar música">
+            <span id="icon-muted">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            </span>
+            <span id="icon-playing" style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </span>
+        </button>
+    </div>
+
+    <script src="ui_controls.js"></script>
 </body>
 </html>

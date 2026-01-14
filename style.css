@@ -20,6 +20,7 @@ body{
     display:flex;
     justify-content:center;
     padding:28px;
+    background-image: url("assets/Gemini_Generated_Image_l5uaypl5uaypl5ua.png");
 }
 
 .container{
@@ -34,7 +35,7 @@ header{
     padding:18px 12px;
     background:white;
     border-radius:10px;
-    box-shadow:0 1px 0 rgba(0,0,0,0.04);
+    box-shadow:0 1px 0 rgba(0,0,0,0.15);
 }
 
 .logo{
@@ -61,7 +62,7 @@ nav a{
     background:white;
     padding:22px;
     border-radius:10px;
-    box-shadow:0 6px 18px rgba(0,0,0,0.04);
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
 }
 
 .hero h1{
@@ -108,7 +109,7 @@ section{
     background:white;
     padding:18px;
     border-radius:10px;
-    box-shadow:0 6px 18px rgba(0,0,0,0.03);
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
 }
 
 .section-grid{
@@ -209,7 +210,7 @@ img:hover {
     background:white;
     border-radius:10px;
     padding:10px;
-    box-shadow:0 6px 18px rgba(0,0,0,0.04);
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
 }
 
 
@@ -235,7 +236,7 @@ img:hover {
     border-radius:8px;
     min-height:120px;
     line-height:1.5;
-    box-shadow:0 3px 10px rgba(0,0,0,0.04);
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
     transition:opacity 0.4s ease;
 }
 
@@ -245,7 +246,7 @@ img:hover {
     background: #fff;
     padding: 12px;
     border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -262,16 +263,77 @@ img:hover {
 /* Efecte subtil quan el cursor hi passa */
 .conversa-video:hover {
     transform: scale(1.01);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 /* Escriure i corregir */
 .correccions-img{
     border-radius: 10px;
     width: 100%;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
 ul{
     list-style-type: none;
+}
+
+/* Floating Controls (Music & Scroll) */
+
+.floating-controls {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    gap: 12px;
+    z-index: 1000;
+    align-items: center;
+}
+
+.control-btn {
+    background: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    color: var(--muted);
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    color: #111;
+}
+
+/* Specific styling for scroll button visibility */
+#scroll-top-btn {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#scroll-top-btn.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+#scroll-top-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    color: #111;
+}
+
+/* Adjust button SVG size */
+.control-btn svg {
+    width: 20px;
+    height: 20px;
 }
